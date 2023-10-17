@@ -1,0 +1,58 @@
+.modal__buttton{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.modal_wrap{
+    position: fixed;
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:100;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal_wrap.modal_wrap--active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: aqua;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__cross{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    background-color: black;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+    cursor: pointer;
+}
